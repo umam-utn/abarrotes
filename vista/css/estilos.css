@@ -1,0 +1,177 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+#cabeceralogo {
+    justify-content: center;
+    width: 100%;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#cabeceralogo > div {
+    padding-top: 45px;
+    padding-left: 20px;
+}
+#cabeceralogo h1 {
+    font: bold 54px Arial, sans-serif;
+    color: black;
+    text-shadow: 2px 2px 8px white;
+}
+main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 2%;
+}
+main > div {
+    display: flex;
+    flex: 1;
+    max-width: 960px;
+}
+#articulosprincipales {
+    flex: 1;
+    margin-right: 20px;
+    padding-top: 30px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+#infoadicional {
+    flex: 1;
+    max-width: 280px;
+    padding: 2%;
+    background-color: rgb(1, 38, 53);
+    border-radius: 10px;
+    color: white;
+}
+#infoadicional h1 {
+    font: bold 18px Arial, sans-serif;
+    color: white;
+    margin-bottom: 15px;
+}
+article {
+    position: relative;
+    padding: 0px 40px 20px 40px;
+}
+article time {
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -70px;
+    width: 80px;
+    padding: 15px 5px;
+    background-color: #094660;
+    box-shadow: 3px 3px 5px rgba(100, 100, 100, 0.7);
+    border-radius: 5px;
+}
+.numerodia {
+    font: bold 36px Verdana, sans-serif;
+    color: #FFFFFF;
+    text-align: center;
+}
+.nombredia {
+    font: 12px Verdana, sans-serif;
+    color: #FFFFFF;
+    text-align: center;
+}
+article h1 {
+    margin-bottom: 5px;
+    font: bold 30px Georgia, sans-serif;
+}
+article p {
+    font: 18px Georgia, sans-serif;
+}
+figure {
+    margin: 10px 0px;
+}
+figure img {
+    max-width: 98%;
+    padding: 1%;
+    border: 1px solid;
+}
+#pielogo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 2%;
+    background-color: rgb(1, 38, 53);
+}
+#pielogo > div {
+    display: flex;
+    flex: 1;
+    background-color: #20c997;
+    border-radius: 10px;
+}
+.seccionpie {
+    flex: 1;
+    padding: 3%;
+}
+.seccionpie h1 {
+    font: bold 20px Arial, sans-serif;
+}
+.seccionpie p {
+    margin-top: 5px;
+}
+.seccionpie a {
+    font: bold 16px Arial, sans-serif;
+    color: #666666;
+    text-decoration: none;
+}
+@media (max-width: 1120px) {
+    article time {
+        position: static;
+        width: 100%;
+        padding: 0px;
+        margin-bottom: 10px;
+        background-color: #FFFFFF;
+        box-shadow: 0px 0px 0px;
+        border-radius: 0px;
+    }
+    .numerodia {
+        display: inline-block;
+        font: bold 14px Verdana, sans-serif;
+        color: #999999;
+        padding-right: 5px;
+    }
+    .nombredia {
+        display: inline-block;
+        font: bold 14px Verdana, sans-serif;
+        color: #999999;
+    }
+    article h1 {
+        margin-bottom: 0px;
+    }
+}
+@media (max-width: 720px) {
+    main > div {
+        display: block;
+    }
+    #articulosprincipales {
+        width: 100%;
+        margin-right: 0px;
+    }
+    #infoadicional {
+        width: 100%;
+        max-width: 100%;
+        padding: 5%;
+        margin-top: 20px;
+    }
+}
+@media (max-width: 480px) {
+    #cabeceralogo > div {
+        text-align: center;
+    }
+    #cabeceralogo h1 {
+        font: bold 46px Arial, sans-serif;
+    }
+    #pielogo > div {
+        display: block;
+    }
+    .seccionpie {
+        width: 94%;
+        text-align: center;
+    }
+}
